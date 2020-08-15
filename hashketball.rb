@@ -210,7 +210,7 @@ end
 # Home: Mason, shoe: 19, rebound: 11, hash[3]
 
 def big_shoe_rebounds
-  # Set two values to integers
+  # Set two objects to equal integer values of 0 to be called/changed by the method
   biggest_shoe_size = 0
   number_of_rebounds = 0
   
