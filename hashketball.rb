@@ -210,14 +210,15 @@ end
 # Home: Mason, shoe: 19, rebound: 11, hash[3]
 
 def big_shoe_rebounds
+  # Set two values to integers
   biggest_shoe_size = 0
   number_of_rebounds = 0
   
   game_hash.each do |location, team_data|
-    team_data[:players].each do |attributes|
-      if attributes[:shoe] > biggest_shoe_size
-        biggest_shoe_size = attributes[:shoe]
-        number_of_rebounds = attributes[:rebounds]
+    team_data[:players].each do |attributes| # Calls the stats of each player within the :players array 
+      if attributes[:shoe] > biggest_shoe_size # Finds and calls the largest integer value in the shoe key
+        biggest_shoe_size = attributes[:shoe] # Sets value for biggest_shoe_size to equal the shoe value
+        number_of_rebounds = attributes[:rebounds] # Sets value for number_of_rebounds to equal the rebounds value
       end
     end
   end
